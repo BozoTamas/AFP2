@@ -10,24 +10,16 @@ https://tinyurl.com/ weboldalon lehet rövidebb url-t választani egy hosszabb r
 
 # Vágyálom rendszer
 
-
 # Funkcionális követelmények
 Nyitó oldalon új file feltölthetó, belehet jelentkezn
 
 # Rendszerre vonatkozó követelmények, szabályok
 ## Front end
-- HTML
-- CSS
-- JS
-- jQuery
-- Bootstrap
-- Font awesome
-- Google fonts
-- Google ads
+- React
 
 ## Back end
-- PHP, MVC modell
-- SQL
+- Node.js
+- MongoDB
 
 # Üzleti folyamatok modelje
 
