@@ -19,7 +19,8 @@ Szerepkörök:
 Követelmények
 Funkcionális követelmények:
 	- Felhassználók adatait tudjuk  tárolni.
-	- 
+	- A felhasználók maguk tudjanak megadni URL címet a feltöltött dokumentumokhoz
+	- Drag and drop feltöltés
 
 Funkcionális terv
 ----
