@@ -1,0 +1,47 @@
+A rendszer célja
+A rendszer célja, hogy a felhasználók könnyen tudjanak egymással megosztani dokumentumokat,
+forráskódotkat, illetve egyéb állományokat. Minden feltöltött/megosztott állománynak az ezt létrehozó felhasználó
+meg tudjon adni egy általa kiválasztott url-t (pl.: project.com/mypublisheddata), vagy a rendszer által generált címet használja.
+A felhasználók egy txt szerkesztő felületen tudnak online kódot/szöveget írni, vagy már egy előre elkészített fájlt tudnak
+'drag and drop' módszerrel feltölteni.
+
+Projektterv
+Szerepkörök:
+	Front end: Bozó Tamás Dániel, Rieger Máté József
+	
+	Back end: Horváth Dániel, Veréb Dávid
+
+Ütemterv: TRELLO LINK KELL!!!!!
+	
+Üzleti folyamatok modellje
+----
+
+Követelmények
+Funkcionális követelmények:
+	- Felhassználók adatait tudjuk  tárolni.
+	- 
+
+Funkcionális terv
+----
+
+Fizikai környezet
+----
+
+Architekturális terv
+----
+
+Adatbázis terv
+----
+
+Implementációs terv
+----
+
+Tesztterv
+----
+
+Telepítési terv
+----
+
+Karbantartási terv
+----
+
