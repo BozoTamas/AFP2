@@ -9,23 +9,41 @@ https://pastebin.com/ weboldalon lehet egy txt file-t lehet feltöltetni és nem
 https://tinyurl.com/ weboldalon lehet rövidebb url-t választani egy hosszabb rövidítésére, ezt a funkciót mi is megvalósítjuk.
 
 # Vágyálom rendszer
+Tökéletes, letsztult megjelenés telefonon és számítógépen is. Egyszerű kezelhetőség.
 
 # Funkcionális követelmények
-Nyitó oldalon új file feltölthetó, belehet jelentkezn
+Bejelentkezés nélkül is használható az oldal, ilyenkor a adatok gyors megadása után létrehozhatjuk a saját linkünket. Amit így hoztunk létre többé nem módosítható és amikor elévül autómatikusan törlődik.
+
+Bejelentkezés esetén, több opciónk van szerkeszteni ezeket a linkeket, akár módosíthatjuk is a tartalmakat vagy örök életűvé tehetjük a linket.
 
 # Rendszerre vonatkozó követelmények, szabályok
 ## Front end
-- HTML, CSS, JS
+- HTML
+- CSS, SCSS
+- JS, jQuery
+- Bootstrap
+- Fontawesome
+- Google fonts, google ads
 
 ## Back end
-- PHP
-- SQL
+- PHP - MVC
+- SQL - MariaDB
 
 # Üzleti folyamatok modelje
 
 # Követelménylista
-
-# Riportok
+|Modul|Név|Kifejtés|
+|---|---|---|
+|Modifikáció|url kezelése|url ellenőrzése, hogy meglévő aliasra hivatkozik-e, ha igen megfelelő oldal, file betöltése. Ha nincs ilyen akkor a főoldal nyílik meg|
+|Adatbázisba mentés|url form|új url mentése az adatbázisba, validáció az alias, ha az alias mező már foglalt visszajelzés. Ha az alias mező üres akkor random 6 karakteres sorozatot generál aliasnak|
+|Adatbázisba mentés|file form|fájlok mentése a szerveren, elérési út mentése az adatbázisba, alias kezelése mint elöbb|
+|Modifikáció|Több file feltöltése|zip formátumba csomagolás, és úgy mentés|
+|Modifikáció|Login|Login form validáció, ha sikeres, bejelentkezés|
+|Modifikáció|Regisztráció|validáció, sikeres regisztrálás esetén bejelentkezés|
+|Email|Email küldés|Sikeres regisztráció esetén email küldés, a felhasználó adataival|
+|Modifikáció|Lejárt aliaszok|Régi lejárt aliaszok törlése|
+|Felület|Reklámok|A weboldal oldalán reklámbanner megjelenítése|
 
 # Fogalomtár
 - URL: Az oldalneve és megfelelő aloldal eléréshez szükséges cím
+- Alias: Az a kifejezés, amit megadunk hogy elérjük az oldalunkat vagy filejainkat. Ezt kell majd beírni az URL-be egy / jel után. pl.: link.com/alias Azaz ez az elérési út.
