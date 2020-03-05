@@ -30,6 +30,7 @@ Bejelentkezés esetén, több opciónk van szerkeszteni ezeket a linkeket, akár
 - SQL - MariaDB
 
 # Üzleti folyamatok modelje
+![use case diagram](https://github.com/BozoTamas/AFP2/blob/master/docs/usecase.png)
 
 # Követelménylista
 |Modul|Név|Kifejtés|
@@ -47,3 +48,6 @@ Bejelentkezés esetén, több opciónk van szerkeszteni ezeket a linkeket, akár
 # Fogalomtár
 - URL: Az oldalneve és megfelelő aloldal eléréshez szükséges cím
 - Alias: Az a kifejezés, amit megadunk hogy elérjük az oldalunkat vagy filejainkat. Ezt kell majd beírni az URL-be egy / jel után. pl.: link.com/alias Azaz ez az elérési út.
+
+# Adatbázis terv
+![adatbázis terv](https://github.com/BozoTamas/AFP2/blob/master/docs/adatb%C3%A1zis.png)
