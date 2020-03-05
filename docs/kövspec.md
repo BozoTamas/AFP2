@@ -15,11 +15,11 @@ Nyitó oldalon új file feltölthetó, belehet jelentkezn
 
 # Rendszerre vonatkozó követelmények, szabályok
 ## Front end
-- React
+- HTML, CSS, JS
 
 ## Back end
-- Node.js
-- MongoDB
+- PHP
+- SQL
 
 # Üzleti folyamatok modelje
 
