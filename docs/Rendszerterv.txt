@@ -18,15 +18,39 @@ Szerepkörök:
 
 Követelmények
 Funkcionális követelmények:
-	- Felhassználók adatait tudjuk  tárolni.
-	- A felhasználók maguk tudjanak megadni URL címet a feltöltött dokumentumokhoz
-	- Drag and drop feltöltés
+	- Felhassználók adatait tudjuk tárolni.
+	- Webes környezeten való működés.
+	
+Nem funkcionális követelmények:
+	- A felhasználók csak a saját bejegyzéseiket tudják módosítani/törölni de a többi felhasználóét is meg tudják tekinteni.
+	- Egyedi URL címet tudnak létrehozni a bejegyzéshez.
 
 Funkcionális terv
-----
+A rendszerben szereplő felhasználóknak kétféle szerepkörük lesz, ez az adminisztrátor és a user.
+Az admin minden user tevékenységét nyomon tudja követni és adott esetben módosíthatja/eltávolíthatja egy-egy user bejegyzését.
+A userek csak a saját bejegyzéseiket tudják eltávolítani/módosítani, a többi user-ét csak megtekinthetik.
+
+Menü felépítés:
+Nyitóoldal
+	- Bejelentkezés
+	- Regisztráció
+	- Segítség
+	
+Bejelentkezve
+	- Profil
+	- Megosztások
+	- Főoldal
+	- Segítség
+	- Kijelentkezés
+
 
 Fizikai környezet
-----
+Az alkalmazás webes felületre készül. Feltételezzük, hogy a számítógépen van telepítve valamilyen böngésző(Google Chrome, Mozilla Firefox, Microsoft Edge).
+Fejlesztői eszközök:
+	Notepad++
+	.
+	.
+	.
 
 Architekturális terv
 ----
@@ -35,14 +59,11 @@ Adatbázis terv
 ----
 
 Implementációs terv
-----
+A webes felületet HTML, CSS használatával fogjuk megoldani.
+Az egyes oldalak kódját külön fájlokba írjuk, valamint az admin és user fájlok más-más mappába lesznek elkülönítve. 
 
 Tesztterv
 ----
 
 Telepítési terv
-----
-
-Karbantartási terv
-----
-
+Az alkalmazás webes felületének eléréséhez csak egy böngésző szükséges. Az operációs rendszerrel telepített is alkalmas lesz rá (Windows 10 esetén Microsoft Edge).
