@@ -56,6 +56,37 @@ Architekturális terv
 ----
 
 Adatbázis terv
+
+Az adatbázis három táblát tartalmaz:
+- Felhasználók (users)
+- Linkek (links)
+- Fájlok (files)
+
+Ezen belül a táblák a következő mezőket tartalmazzák:
+Users tábla:
+* id - azonosító
+* name - a felhasználók nevei számára
+* email - a felhasználó email-címe számára
+* password - a felhasználó jelszavának számára
+
+Links tábla:
+* id - azonosító
+* user_id - felhasználói azonosító
+* alias - amire mutat a link
+* url - az elérési út
+* views - a megtekintések száma
+* created - a link készítésének időpontja (datetime)
+* remove - a link eltávolításának időpontja (datetime)
+
+Files tábla:
+* id - azonosító
+* user_id - felhasználói azonosító
+* alias - amire mutat a link
+* name - név
+* file - fájl
+* views - a megtekintések száma
+* created - a fájl készítésének időpontja (datetime)
+* remove - a fájl eltávolításának időpontja (datetime)
 ----
 
 Implementációs terv
