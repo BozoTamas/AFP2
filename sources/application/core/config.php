@@ -10,15 +10,16 @@ define('MAIN_CONTROLLER', 'home');
 define('MAIN_VIEW', 'index');
 
 // DB Params
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'valami');
+define('DB_HOST', 'sql7.freemysqlhosting.net');
+define('DB_NAME', 'sql7329781');
+define('DB_USER', 'sql7329781');
+define('DB_PASS', '971I5E59Fe');
+define('DB_PORT', 3306);
 define('DB_TYPE', 'mysql');
-define('DB_CHARSET', 'utf-8');
+define('DB_CHARSET', 'UTF-8');
 
 // Metadata
-define('SITE_NAME', '');
+define('SITE_NAME', 'Link to you');
 define('SITE_DESCRIPTION', '');
-define('APP_VERSION', '');
+define('APP_VERSION', '0.1');
 define('APP_LAST_UPDATE', '');
