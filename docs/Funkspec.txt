@@ -12,6 +12,12 @@ hogy a deolgozók gyorsan tudjanak egymásnak fájlokat megosztani, ugyanis egy 
 Fontos, hogy ne csak szöveges állományokat tudjanak megosztani, hanem esetenként képeket, táblázatokat, forráskódot, stb. is.
 
 Követelménylista
+	Funkcionális követelmények:
+	Bejelentkezés nélkül is használható az oldal, ilyenkor a adatok gyors megadása után létrehozhatjuk
+	a saját linkünket. Amit így hoztunk létre többé nem módosítható és amikor elévül autómatikusan törlődik.
+	Bejelentkezés esetén, több opciónk van szerkeszteni ezeket a linkeket,
+	akár módosíthatjuk is a tartalmakat vagy örök életűvé tehetjük a linket.
+
 
 Jelenlegi üzleti folyamatok modellje
 
