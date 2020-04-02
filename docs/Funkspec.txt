@@ -7,7 +7,9 @@ vagy a rendszer által generált címet használja. A felhasználók egy txt sze
 'drag and drop' módszerrel feltölteni.
 
 Jelenlegi helyzet
-
+A rendszer előállítását fontosnak tartjuk, ugyanis a mai modern társadalomban sok munkahelyen létfontosságú,
+hogy a deolgozók gyorsan tudjanak egymásnak fájlokat megosztani, ugyanis egy csapatmunka sokkal hatékonyabb lehet ez által.
+Fontos, hogy ne csak szöveges állományokat tudjanak megosztani, hanem esetenként képeket, táblázatokat, forráskódot, stb. is.
 
 Követelménylista
 
