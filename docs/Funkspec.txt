@@ -45,7 +45,9 @@ Igényelt üzleti folyamatok modellje:
 	Tanárok, más munka helyben elhelyezkedő ember is tud használni fájlt megosztani egymásal elég egyszerűen gyorsan és effektíven.
 
 
-Használati esetek
+Használati esetek:
+	Két esetett vizsgálunk a weboldalon. Az egyik esest az amikor egy regisztrált felhasználó tölt fel vagy tölt le a weboldalról.
+	A másik eset pedig amikor már egy nem regisztrált felhasználó letölt a weboldalról.
 
 Megfeleltetés, hogyan fedik le a használati esetek a követelményeket
 
