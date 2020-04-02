@@ -45,3 +45,5 @@ Képernyő tervek
 Forgatókönyv
 
 Fogalomszótár
+URL: Az oldalneve és megfelelő aloldal eléréshez szükséges cím
+Alias: Az a kifejezés, amit megadunk hogy elérjük az oldalunkat vagy filejainkat. Ezt kell majd beírni az URL-be egy / jel után. pl.: link.com/alias, azaz ez az elérési út.
