@@ -27,7 +27,10 @@ Funkcionális követelmények:
 	a saját linkünket. Amit így hoztunk létre többé nem módosítható és amikor elévül autómatikusan törlődik.
 	Bejelentkezés esetén, több opciónk van szerkeszteni ezeket a linkeket,
 	akár módosíthatjuk is a tartalmakat vagy örök életűvé tehetjük a linket.
-
+ 
+Rendszerhez tartozó követelmények:
+	Front end: HTML, CSS, JS/jQuery, Bootstrap, Fontawesome, Google fonts, Google ads
+	Back end: PHP - MVC, SQL - MariaDB
 
 Jelenlegi üzleti folyamatok modellje
 
