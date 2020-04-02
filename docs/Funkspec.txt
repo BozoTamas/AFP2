@@ -32,7 +32,10 @@ Rendszerhez tartozó követelmények:
 	Front end: HTML, CSS, JS/jQuery, Bootstrap, Fontawesome, Google fonts, Google ads
 	Back end: PHP - MVC, SQL - MariaDB
 
-Jelenlegi üzleti folyamatok modellje
+Jelenlegi üzleti folyamatok modellje:
+	A mai világba az internet használata alapvető sokak számára, és munkahely vagy akár baratok egymás között fájl megosztását
+	teszi lehetővé az oldal egyszerűbben és gyorsabban egy olyan oldalon ahol a link is szerkeszhető.Az oldal akár programozók számára
+	is elég hatékony lehet.
 
 Igényelt üzleti folyamatok modellje
 
