@@ -12,7 +12,17 @@ hogy a deolgozók gyorsan tudjanak egymásnak fájlokat megosztani, ugyanis egy 
 Fontos, hogy ne csak szöveges állományokat tudjanak megosztani, hanem esetenként képeket, táblázatokat, forráskódot, stb. is.
 
 Követelménylista
-	Funkcionális követelmények:
+	URL kezelése: url ellenőrzése, hogy meglévő aliasra hivatkozik-e, ha igen megfelelő oldal, file betöltése. Ha nincs ilyen akkor a főoldal nyílik meg
+	URL form: új url mentése az adatbázisba, validáció az alias, ha az alias mező már foglalt visszajelzés. Ha az alias mező üres akkor random 6 karakteres sorozatot generál aliasnak
+	File form: fájlok mentése a szerveren, elérési út mentése az adatbázisba, alias kezelése mint elöbb
+	Több file: feltöltése zip formátumba csomagolás, és úgy mentés
+	Login: Login form validáció, ha sikeres, bejelentkezés
+	Regisztráció: validáció, sikeres regisztrálás esetén bejelentkezés
+	Email küldés: Sikeres regisztráció esetén email küldés, a felhasználó adataival
+	Lejárt aliaszok: Régi lejárt aliaszok törlése
+	Reklámok: A weboldal oldalán reklámbanner megjelenítése
+	
+Funkcionális követelmények:
 	Bejelentkezés nélkül is használható az oldal, ilyenkor a adatok gyors megadása után létrehozhatjuk
 	a saját linkünket. Amit így hoztunk létre többé nem módosítható és amikor elévül autómatikusan törlődik.
 	Bejelentkezés esetén, több opciónk van szerkeszteni ezeket a linkeket,
