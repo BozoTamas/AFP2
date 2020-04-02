@@ -37,7 +37,13 @@ Jelenlegi üzleti folyamatok modellje:
 	teszi lehetővé az oldal egyszerűbben és gyorsabban egy olyan oldalon ahol a link is szerkeszhető.Az oldal akár programozók számára
 	is elég hatékony lehet.
 
-Igényelt üzleti folyamatok modellje
+Igényelt üzleti folyamatok modellje:
+	
+	Azért hogy egyszerűbbé tegyük a diákok és a tanárok
+	feladatát, létrehozunk egy programot ami a mai kornak megfelelően
+	helyt tud állni az elektronikai világban. A diákok is sokkalta könyebben tudnak megosztani egymásal pdf-ket, tételeket, akár nagyobb fájlokat.
+	Tanárok, más munka helyben elhelyezkedő ember is tud használni fájlt megosztani egymásal elég egyszerűen gyorsan és effektíven.
+
 
 Használati esetek
 
