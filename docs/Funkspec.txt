@@ -1,6 +1,13 @@
 Áttekintés
+Projektünk egy olyan fájlmegosztó platform létrehozása, melynek segítségével a
+felhasználók gyorsan és egyszerűen tudnak más emberekkel (család/barátok/munkatársak)
+megosztani adatokat.
+Minden feltöltött/megosztott állománynak az ezt létrehozó felhasználó adhat meg egy általa kiválasztott url-t (pl.: project.com/mypublisheddata)
+vagy a rendszer által generált címet használja. A felhasználók egy txt szerkesztő felületen tudnak online kódot/szöveget írni, vagy már egy előre elkészített fájlt tudnak
+'drag and drop' módszerrel feltölteni.
 
 Jelenlegi helyzet
+
 
 Követelménylista
 
