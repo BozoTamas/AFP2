@@ -49,12 +49,23 @@ Használati esetek:
 	Két esetett vizsgálunk a weboldalon. Az egyik esest az amikor egy regisztrált felhasználó tölt fel vagy tölt le a weboldalról.
 	A másik eset pedig amikor már egy nem regisztrált felhasználó letölt a weboldalról.
 
-Megfeleltetés, hogyan fedik le a használati esetek a követelményeket
+Megfeleltetés, hogyan fedik le a használati esetek a követelményeket:
 
-Képernyő tervek
+	A weboldal használatához nem szükséges a regisztráció, viszont ilyenkor a lehetőségek korlátozottak. Regisztráció nélküli használat esetén amit létrehoz a felhasználó linket, azt ő utána nem módosíthatja, illetve az ilyen felhasználó a weboldalról csak letölteni tud.
+	Ellenben a regisztrált felhasználók kezében több lehetőség van, az ő általuk készített linket/linkeket a felh. kedve, ízlése szerint módosíthatja, illetve a weboldalra feltölteni illetve letölteni is tud onnan.
+	
+Képernyő tervek:
 
-Forgatókönyv
+	Regisztráció : regisztrációs felület, email, illetve jelszó beírása, ezután vissza a login felületre
+	Login : email, jelszó beírása, ha sikeres akkor bejelntkezés, ha még nem regisztrált akkor a regisztráció gombra kattintva megteheti ezt.
+	Főképernyő : Tallózás gombbal meglévő fájl feltöltése, a fájlnak száánt URL megírása, vagy legenerálása. A képernyő oldalán reklámbannerek lesznek találhatóak.
+	Txt szerkesztő felület: ezen a felületen tudják a felhasználók a kódot/szöveget megírni.
+	
+Forgatókönyv:
 
+	A projekthez először elkészítjük a képernyőket,felületeket (frontend), ezután megírjuk a hozzájuk tartozó kódokat (backend).
+	Adatbázis létrehozása, tervezése.
+	
 Fogalomszótár
 URL: Az oldalneve és megfelelő aloldal eléréshez szükséges cím
 Alias: Az a kifejezés, amit megadunk hogy elérjük az oldalunkat vagy filejainkat. Ezt kell majd beírni az URL-be egy / jel után. pl.: link.com/alias, azaz ez az elérési út.
