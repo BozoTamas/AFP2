@@ -10,10 +10,10 @@ define('MAIN_CONTROLLER', 'home');
 define('MAIN_VIEW', 'index');
 
 // DB Params
-define('DB_HOST', 'sql7.freemysqlhosting.net');
-define('DB_NAME', 'sql7329781');
-define('DB_USER', 'sql7329781');
-define('DB_PASS', '971I5E59Fe');
+define('DB_HOST', 'db4free.net');
+define('DB_NAME', 'afp2_link');
+define('DB_USER', 'afp2_link');
+define('DB_PASS', 'afp2_link');
 define('DB_PORT', 3306);
 define('DB_TYPE', 'mysql');
 define('DB_CHARSET', 'UTF-8');
