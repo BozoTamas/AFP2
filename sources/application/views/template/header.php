@@ -39,4 +39,4 @@
             <a href="<?=URL?>" class="btn btn-primary"><i class="fas fa-home"></i> HOME</a>
         </div>
     </nav>
-</header>
+</header>  
