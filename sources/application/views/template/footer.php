@@ -6,7 +6,7 @@
 					<h6>Elérhetőségek</h6>
 					<ul>
 						<li><a href="team.html">Hitelesítési felelős</a></li>
-							<li><a href="team.html">Kapcsolattartási összekötő</a></li>
+						<li><a href="team.html">Kapcsolattartási összekötő</a></li>
 					</ul>								
 				</div>
 			</div>
@@ -35,3 +35,11 @@
 		</div>
 	</div>
 </footer>
+
+<!-- jQuery, Bootstrap, JavaScript -->
+<script src="<?=URL?>/assets/vendor/jquery/jquery-3.4.1.min.js"></script>
+<script src="<?=URL?>/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?=URL?>/assets/js/script.js"></script>
+
+</body>
+</html>
