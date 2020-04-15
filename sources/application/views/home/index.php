@@ -1,14 +1,14 @@
-<section>
+<section class="center">
     <form action="saveLink" method="POST">
         <input type="text" name="url">
         <input type="text" name="alias">
-        <button type="submit">Submit</button>
+        <button type="submit" class="btn btn-dark">Submit</button>
     </form>
 </section>
 
-<section>
+<section class="center">
     <form action="saveFolder" method="POST">
-        <input type="file" name="file">
+        <input type="file" name="file" >
         <input type="text" name="alias">
         <select name="expiration">
             <option value="1">1 Day</option>
@@ -21,6 +21,6 @@
             <option value="180">6 Months</option>
             <option value="365">1 Year</option>
         </select>
-        <button type="submit">Submit</button>
+        <button type="submit" class="btn btn-dark">Submit</button>
     </form>
 </section>
