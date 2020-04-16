@@ -41,8 +41,8 @@ class Home extends Controller {
         $this->redirect('/');
     }
     
-    public function home() {
-        $this->load_view('home/home');
+    public function startpage() {
+        $this->load_view('home/startpage');
     }
     
     public function support() {
