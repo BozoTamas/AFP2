@@ -11,22 +11,22 @@
     <link rel="stylesheet" href="<?=URL?>/assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?=URL?>/assets/vendor/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="<?=URL?>/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
 	<header id="header" id="home">
-        <div class="container">
+        <div class="container ">
             <div class="row align-items-center justify-content-between d-flex">
                 <div id="logo">
-                    <a href="index.html"><img src="img/logo.png" alt="Használ Járművek Olcsón" title="Használ Járművek Olcsón" /></a>
+                    <a href="index.html"><img src="img/logo.png" /></a>
                 </div>
-                <nav id="nav-menu-container">
+                <nav id="nav-menu-container left">
                     <ul class="nav-menu">
-                        <li class="menu-active"><a href="index.html">Kezdőlap</a></li>
-                        <li><a href="about.html">Rólunk</a></li>
-                        <li><a href="bikes.html">Motorok</a></li>
-                        <li><a href="cars.html">Autóink</a></li>
-                        <li><a href="team.html">Elérhetőségek</a></li>
-                        <li><a href="blog-home.html">Blog</a></li>    
+                        
+                        <li><a href="<?=URL?>/support">Elérhetőségek</a></li>                      
+                        <li><a href="<?=URL?>/register">Registráció</a></li>
+                        <li><a href="<?=URL?>/login">Login</a></li>  
+                         
                     </ul>
                 </nav>                    
                 </div>
@@ -35,8 +35,8 @@
 </body>
 <header>
     <nav class="bg-primary py-1">
-        <div class="container d-flex justify-content-between">
-            <a href="<?=URL?>" class="btn btn-primary"><i class="fas fa-home"></i> HOME</a>
+        <div class="container  justify-content-between" >
+            <a href="<?=URL?>" class="btn btn-primary "><i class="fas fa-home"></i> HOME</a>
         </div>
     </nav>
 </header>  

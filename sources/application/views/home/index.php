@@ -1,3 +1,4 @@
+<div align = "center">
 <section class="center">
     <form action="saveLink" method="POST">
         <input type="text" name="url">
@@ -23,4 +24,7 @@
         </select>
         <button type="submit" class="btn btn-dark">Submit</button>
     </form>
+    </br>
+    </br>
 </section>
+</div>
