@@ -3488,4 +3488,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 ################
                End Blog Details  Page style
 ################
-*/
+
+<nav class="bg-primary py-1" >
+<div class="container  justify-content-between" >
+<a href="<?=URL?>" class="btn btn-primary " > <i class="fas fa-home" > </i > HOME</a >
+</div >
+</nav >*/

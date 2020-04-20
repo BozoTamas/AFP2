@@ -13,12 +13,15 @@
     <link rel="stylesheet" href="<?=URL?>/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/main.css">
 </head>
-<body>
-	<header id="header" id="home">
-        <div class="container ">
+
+<header>
+
+ <nav class="bg-primary py-1">
+<div class="container   justify-content-between">
             <div class="row align-items-center justify-content-between d-flex">
                 <div id="logo">
                     <a href="index.html"><img src="img/logo.png" /></a>
+                    <a href="<?=URL?>" class="btn btn-primary "><i class="fas fa-home"></i> HOME</a>
                 </div>
                 <nav id="nav-menu-container left">
                     <ul class="nav-menu">
@@ -26,17 +29,10 @@
                         <li><a href="<?=URL?>/support">Elérhetőségek</a></li>                      
                         <li><a href="<?=URL?>/register">Registráció</a></li>
                         <li><a href="<?=URL?>/login">Login</a></li>  
-                         
+                        
                     </ul>
                 </nav>                    
                 </div>
             </div>
-    </header>
-</body>
-<header>
-    <nav class="bg-primary py-1">
-        <div class="container  justify-content-between" >
-            <a href="<?=URL?>" class="btn btn-primary "><i class="fas fa-home"></i> HOME</a>
-        </div>
-    </nav>
-</header>  
+ </nav>
+</header>
