@@ -1,7 +1,7 @@
 <footer class="footer-area section-gap">
 	<div class="container">
 		<div class="row">
-														
+				 <a href="<?=URL?>" class="btn btn-dark ">Jump Upper</a>										
 		</div>
 	</div>
 </footer>
