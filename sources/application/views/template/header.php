@@ -26,8 +26,8 @@
                 <nav id="nav-menu-container left">
                     <ul class="nav-menu">
                         
-                        <li><a href="<?=URL?>/support">Elérhetőségek</a></li>                      
-                        <li><a href="<?=URL?>/register">Registráció</a></li>
+                        <li><a href="<?=URL?>/support">Contacts</a></li>                      
+                        <li><a href="<?=URL?>/register">Registration</a></li>
                         <li><a href="<?=URL?>/login">Login</a></li>  
                         
                     </ul>
