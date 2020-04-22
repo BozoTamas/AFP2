@@ -94,6 +94,19 @@ A webes felületet HTML, CSS használatával fogjuk megoldani.
 Az egyes oldalak kódját külön fájlokba írjuk, valamint az admin és user fájlok más-más mappába lesznek elkülönítve. 
 
 Tesztterv
+
+	Külön legyenek  tesztelve Frontend és Backend szempontjából a weboldal.
+
+	->FrontEnd:-A header-ben elhelyezett Home gomb a kezdő oldalra vezető link jelenik meg.
+		   -A header-ben elhelyezett lista elemei a megfelelő weboldalra vezetik át a felhasználót.
+		   -A Css formázás megjelenik azaz sikeresen lettek meghivatkozva.
+		   -A bootstrap-el való formázás müködik-e így bizonyitva az is hogy jól van hivatkozva.
+		   -A scriptek normalisan müködnek és elvégzik a feladatukat.
+		   -A logo/képek megfelelően jelennek emg a weboldalon.
+		   
+		
+
+
 ----
 
 Telepítési terv
