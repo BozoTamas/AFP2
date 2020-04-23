@@ -64,7 +64,7 @@ class auth_model extends Model {
 	}
 	
 	public function user_Login($username, $password) {
-		global $errors;
+		global $errors, $database;
 	if (empty($username)) {
 		array_push($errors, "A bejelentkezéshez szükséges a felhasználónév");
 	}
@@ -73,7 +73,7 @@ class auth_model extends Model {
 	}
 	if (count($errors) == 0 }
 	$query = "SELECT * FROM `users` WHERE `name` = ? OR `password` = ?";
-	$result = mysqli_query($db, $query);
+	$result = mysqli_query($database, $query);
 		}
 	}
 }
