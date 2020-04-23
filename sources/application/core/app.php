@@ -10,7 +10,7 @@ class App {
 
         $url = isset($_GET['url']) ? explode('/', filter_var(rtrim($_GET['url'], '/'), FILTER_SANITIZE_URL)) : null;
 
-        if (file_exists('application/controllers/'.$url[0].'.php')) {
+        if (isset($url[0]) && file_exists('application/controllers/'.$url[0].'.php')) {
             $this->controller = $url[0];
             unset($url[0]);
         }
