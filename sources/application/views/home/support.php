@@ -31,8 +31,8 @@
 			
 			<div class="col-md-3 single-team">
 			    <div class="meta-text mt-30 text-center">
-				    <h4>Horváth Dániel - </h4>
-				    <p>...@gmail.com</p>			    	
+				    <h4>Horváth Dániel - NMEQAT</h4>
+				    <p>horvath95d@gmail.com</p>			    	
 			    </div>
 			</div>
 			
