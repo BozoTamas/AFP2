@@ -1,0 +1,71 @@
+Áttekintés
+Projektünk egy olyan fájlmegosztó platform létrehozása, melynek segítségével a
+felhasználók gyorsan és egyszerűen tudnak más emberekkel (család/barátok/munkatársak)
+megosztani adatokat.
+Minden feltöltött/megosztott állománynak az ezt létrehozó felhasználó adhat meg egy általa kiválasztott url-t (pl.: project.com/mypublisheddata)
+vagy a rendszer által generált címet használja. A felhasználók egy txt szerkesztő felületen tudnak online kódot/szöveget írni, vagy már egy előre elkészített fájlt tudnak
+'drag and drop' módszerrel feltölteni.
+
+Jelenlegi helyzet
+A rendszer előállítását fontosnak tartjuk, ugyanis a mai modern társadalomban sok munkahelyen létfontosságú,
+hogy a deolgozók gyorsan tudjanak egymásnak fájlokat megosztani, ugyanis egy csapatmunka sokkal hatékonyabb lehet ez által.
+Fontos, hogy ne csak szöveges állományokat tudjanak megosztani, hanem esetenként képeket, táblázatokat, forráskódot, stb. is.
+
+Követelménylista
+	URL kezelése: url ellenőrzése, hogy meglévő aliasra hivatkozik-e, ha igen megfelelő oldal, file betöltése. Ha nincs ilyen akkor a főoldal nyílik meg
+	URL form: új url mentése az adatbázisba, validáció az alias, ha az alias mező már foglalt visszajelzés. Ha az alias mező üres akkor random 6 karakteres sorozatot generál aliasnak
+	File form: fájlok mentése a szerveren, elérési út mentése az adatbázisba, alias kezelése mint elöbb
+	Több file: feltöltése zip formátumba csomagolás, és úgy mentés
+	Login: Login form validáció, ha sikeres, bejelentkezés
+	Regisztráció: validáció, sikeres regisztrálás esetén bejelentkezés
+	Email küldés: Sikeres regisztráció esetén email küldés, a felhasználó adataival
+	Lejárt aliaszok: Régi lejárt aliaszok törlése
+	Reklámok: A weboldal oldalán reklámbanner megjelenítése
+	
+Funkcionális követelmények:
+	Bejelentkezés nélkül is használható az oldal, ilyenkor a adatok gyors megadása után létrehozhatjuk
+	a saját linkünket. Amit így hoztunk létre többé nem módosítható és amikor elévül autómatikusan törlődik.
+	Bejelentkezés esetén, több opciónk van szerkeszteni ezeket a linkeket,
+	akár módosíthatjuk is a tartalmakat vagy örök életűvé tehetjük a linket.
+ 
+Rendszerhez tartozó követelmények:
+	Front end: HTML, CSS, JS/jQuery, Bootstrap, Fontawesome, Google fonts, Google ads
+	Back end: PHP - MVC, SQL - MariaDB
+
+Jelenlegi üzleti folyamatok modellje:
+	A mai világba az internet használata alapvető sokak számára, és munkahely vagy akár baratok egymás között fájl megosztását
+	teszi lehetővé az oldal egyszerűbben és gyorsabban egy olyan oldalon ahol a link is szerkeszhető.Az oldal akár programozók számára
+	is elég hatékony lehet.
+
+Igényelt üzleti folyamatok modellje:
+	
+	Azért hogy egyszerűbbé tegyük a diákok és a tanárok
+	feladatát, létrehozunk egy programot ami a mai kornak megfelelően
+	helyt tud állni az elektronikai világban. A diákok is sokkalta könyebben tudnak megosztani egymásal pdf-ket, tételeket, akár nagyobb fájlokat.
+	Tanárok, más munka helyben elhelyezkedő ember is tud használni fájlt megosztani egymásal elég egyszerűen gyorsan és effektíven.
+
+
+Használati esetek:
+	Két esetett vizsgálunk a weboldalon. Az egyik esest az amikor egy regisztrált felhasználó tölt fel vagy tölt le a weboldalról.
+	A másik eset pedig amikor már egy nem regisztrált felhasználó letölt a weboldalról.
+
+Megfeleltetés, hogyan fedik le a használati esetek a követelményeket:
+
+	A weboldal használatához nem szükséges a regisztráció, viszont ilyenkor a lehetőségek korlátozottak. Regisztráció nélküli használat esetén amit létrehoz a felhasználó linket, azt ő utána nem módosíthatja, illetve az ilyen felhasználó a weboldalról csak letölteni tud.
+	Ellenben a regisztrált felhasználók kezében több lehetőség van, az ő általuk készített linket/linkeket a felh. kedve, ízlése szerint módosíthatja, illetve a weboldalra feltölteni illetve letölteni is tud onnan.
+	
+Képernyő tervek:
+
+	Regisztráció : regisztrációs felület, email, illetve jelszó beírása, ezután vissza a login felületre
+	Login : email, jelszó beírása, ha sikeres akkor bejelntkezés, ha még nem regisztrált akkor a regisztráció gombra kattintva megteheti ezt.
+	Főképernyő : Tallózás gombbal meglévő fájl feltöltése, a fájlnak száánt URL megírása, vagy legenerálása. A képernyő oldalán reklámbannerek lesznek találhatóak.
+	Txt szerkesztő felület: ezen a felületen tudják a felhasználók a kódot/szöveget megírni.
+	
+Forgatókönyv:
+
+	A projekthez először elkészítjük a képernyőket,felületeket (frontend), ezután megírjuk a hozzájuk tartozó kódokat (backend).
+	Adatbázis létrehozása, tervezése.
+	
+Fogalomszótár
+URL: Az oldalneve és megfelelő aloldal eléréshez szükséges cím
+Alias: Az a kifejezés, amit megadunk hogy elérjük az oldalunkat vagy filejainkat. Ezt kell majd beírni az URL-be egy / jel után. pl.: link.com/alias, azaz ez az elérési út.
