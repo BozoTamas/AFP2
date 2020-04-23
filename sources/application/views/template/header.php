@@ -28,7 +28,8 @@
                         
                         <li><a href="<?=URL?>/support">Contacts</a></li>                      
                         <li><a href="<?=URL?>/register">Registration</a></li>
-                        <li><a href="<?=URL?>/login">Login</a></li>  
+                        <li><a href="<?=URL?>/login">Login</a></li>
+						<li><a href="<?=URL?>/url">Megjelenites</a></li>  						
                         
                     </ul>
                 </nav>                    
