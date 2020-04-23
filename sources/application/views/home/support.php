@@ -52,7 +52,7 @@
 			
 			<div class="col-md-3 single-team">
 			    <div class="meta-text mt-30 text-center">
-				    <h4>Veréb Dávid - </h4>
+				    <h4>Veréb Dávid - KN0UMQ</h4>
 				    <p>...@gmail.com</p>			    	
 			    </div>
 			</div>
