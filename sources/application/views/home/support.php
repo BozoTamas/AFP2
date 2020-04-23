@@ -38,7 +38,7 @@
 			
 			<div class="col-md-3 single-team">
 			    <div class="meta-text mt-30 text-center">
-				    <h4>Rieger Máté József - </h4>
+				    <h4>Rieger Máté József - JEC8T3</h4>
 				    <p>...@gmail.com</p>			    	
 			    </div>
 			</div>
