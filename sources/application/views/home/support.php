@@ -46,7 +46,7 @@
 			<div class="col-md-3 single-team">
 			    <div class="meta-text mt-30 text-center">
 				    <h4>Szabó Patrik - AI18MZ</h4>
-				    <p>...@gmail.com</p>			    	
+				    <p>Szabo.patrik@gmail.com</p>			    	
 			    </div>
 			</div>
 			
