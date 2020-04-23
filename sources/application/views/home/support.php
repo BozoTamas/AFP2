@@ -45,7 +45,7 @@
 			
 			<div class="col-md-3 single-team">
 			    <div class="meta-text mt-30 text-center">
-				    <h4>Szabó Patrik - </h4>
+				    <h4>Szabó Patrik - AI18MZ</h4>
 				    <p>...@gmail.com</p>			    	
 			    </div>
 			</div>
