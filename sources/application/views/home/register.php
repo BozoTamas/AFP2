@@ -24,4 +24,4 @@
         <button type="submit" class="btn btn-dark">Registration</button>
     </form>
 </section>
- 
+  
