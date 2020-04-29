@@ -6,3 +6,7 @@ FrontEnd-Teszt
 	-Teszt: A home gomb normális működése.
 	-Észrevétel: A homgombra kattinva a headerben minden másik oldaról vissza visz/hivatkoz a beálított kezdő oldalra.
 	
+	-Tesztelés időpontja: 20200.apr.29
+	-Tesztelő: Szabó Patrik
+	-Teszt: A Headerben írt hivtkozások helyes oldara visznek.
+	-Észrevétel: A Headerbe mint pl a login-ra kattintva a login oldal töltődik be helyesen mint akár a többi.
