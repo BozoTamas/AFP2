@@ -13,21 +13,25 @@ class Home extends Controller {
 
     public function index($alias = '') {
         
-        if (empty($alias))
-            $this->load_view('home/index');
+        if (empty($alias)) {
+            $data = $this->model->getLastLinks();
+            $this->load_view('home/index', $data);
         
-        else {
+        } else {
             $url = $this->model->get_url($alias);
 
             if (!empty($url))
                 $this->redirect($url);
 
-            $folder = $this->model->get_folder($alias);
+            $dir = $this->model->getDir($alias);
 
-            if (!empty($folder))
-                $this->load_view('home/folder', $folder);
-            else
-                $this->load_view('home/index');
+            if (!empty($dir))
+                $this->load_view('home/dir', $dir);
+
+            else {
+                $data = $this->model->getLastLinks();
+                $this->load_view('home/index', $data);
+            }
         }
     }
 
@@ -36,8 +40,8 @@ class Home extends Controller {
         $this->redirect('/');
     }
 
-    public function saveFolder() {
-        $this->model->save_folder();
+    public function createDir() {
+        $this->model->createDir();
         $this->redirect('/');
     }
     
