@@ -8,8 +8,9 @@
 </section>
 
 <section class="center">
-    <form action="saveFolder" method="POST">
-        <input type="file" name="file" >
+    <form method="POST" action="createDir" enctype="multipart/form-data">
+        <textarea id="textarea" name="text"></textarea>
+        <input type="file" name="files[]">
         <input type="text" name="alias">
         <select name="expiration">
             <option value="1">1 Day</option>
