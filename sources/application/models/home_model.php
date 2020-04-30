@@ -3,60 +3,82 @@
 class home_model extends Model {
     
     public function get_url($alias) {
-        $url = $this->getField("SELECT `url` FROM `links` WHERE `alias`='".$alias."'");
+        $url = $this->getRecord("SELECT `url` FROM `links` WHERE `alias`='".$alias."'");
         
         if (!empty($url))
-            $this->executeDML("UPDATE `links` SET `views` = `views` + 1
-                WHERE `alias`='".$alias."'");
-
-        return $url;
+            return $url['url'];
     }
 
-    public function get_folder($alias) {
-        $folder = $this->getRecord("SELECT * FROM `folders` WHERE `alias`='".$alias."'");
+    public function getDir($alias) {
+        $file = $this->getRecord("SELECT * FROM `dir` WHERE `alias`='".$alias."'");
 
-        if (!empty($folder))
-            $this->executeDML("UPDATE `folders` SET `views` = `views` + 1
+        if (!empty($file))
+            $this->executeDML("UPDATE `dir` SET `views` = `views` + 1
                 WHERE `alias`='".$alias."'");
 
-        return $folder;
+        return $file;
+    }
+
+    public function getLastLinks() {
+        return $this->getList("SELECT `alias`, `created` FROM `dir` ORDER BY `created` DESC LIMIT 8");
     }
 
     public function save_link() {
         $alias = empty($_POST['alias']) ? $this->get_random_alias() : $_POST['alias'];
         
-        $query = ('INSERT INTO `links` (`user_id`, `alias`, `url`, `created`, `expiration`)
-            VALUES (:user_id, :alias, :url, :created, :expiration)');
+        $query = ('INSERT INTO `links` (`userID`, `alias`, `url`, `created`)
+            VALUES (:userID, :alias, :url, :created)');
         
         $params = [
-            ':user_id'  => NULL,
+            ':userID'   => NULL,
             ':alias'    => $alias,
             ':url'      => $_POST['url'],
-            ':created'  => date("Y-m-d H:i:s"),
-            ':expiration'   => date("Y-m-d H:i:s", strtotime("+7 day"))
+            ':created'  => date("Y-m-d H:i:s")
         ];
         
         $response = $this->executeDML($query, $params);
-        $_SESSION['new_url'] = isset($response) ? $response : URL.'/'.$alias;
+        $_SESSION['linkMessage'] = isset($response) ? $response : URL.'/'.$alias;
     }
 
-    public function save_folder() {
-        var_dump($_POST);
-        $alias = empty($_POST['alias']) ? $this->get_random_alias() : $_POST['alias'];
+    public function createDir() {
 
-        $query = ('INSERT INTO `folders` (`user_id`, `alias`, `name`, `folder`, `created`, `expiration`)
-            VALUES (:user_id, :alias, :name, :folder, :created, :expiration)');
+        if (empty($_FILES['files']) || empty($_POST['text'])) {
+            $_SESSION['dirMessage'] = 'Nem töltöttél fel semmit';
         
-        $params = [
-            ':user_id'  => NULL,
-            ':alias'    => $alias,
-            ':folder'	  => $_POST['folder'],
-            ':created'  => date("Y-m-d H:i:s"),
-            ':expiration'   => date("Y-m-d H:i:s", strtotime("+7 day")) //$_POST['expiration']
-        ];
-        
-        $response = $this->executeDML($query, $params);
-        $_SESSION['new_url'] = isset($response) ? $response : URL.'/'.$alias;
+        } else {
+
+            $alias = empty($_POST['alias']) ? $this->get_random_alias() : $_POST['alias'];
+    
+            if (!empty($this->getDir($alias))) {
+                $_SESSION['dirMessage'] = 'Ez a link már létezik, válassz más rövidítést!';
+    
+            } else {
+                $query = ('INSERT INTO `dir` (`alias`, `created`, `expiration`)
+                    VALUES (:alias, :created, :expiration)');
+                
+                $params = [
+                    ':alias'    => $alias,
+                    ':created'  => date("Y-m-d H:i:s"),
+                    ':expiration'   => date("Y-m-d H:i:s", strtotime("+".$_POST['expiration']." day"))
+                ];
+                
+                $response = $this->executeDML($query, $params);
+                $_SESSION['dirMessage'] = isset($response) ? $response : 'Successful uploading, your link: '.URL.'/'.$alias;
+            
+                mkdir('./assets/uploads/'.$alias);
+                
+                for ($i=0; $i < count($_FILES['files']['name']); $i++) {
+                    $targetFile = 'assets/uploads/'.$alias.'/'.$_FILES['files']['name'][$i];
+                    move_uploaded_file($_FILES['files']['tmp_name'][$i], $targetFile);
+                }
+    
+                if (!empty($_POST['text'])) {
+                    $textFile = fopen('assets/uploads/'.$alias.'/text.txt', "a");
+                    fwrite($textFile, $_POST['text']);
+                    fclose($textFile);
+                }
+            }
+        }
     }
 
     private function get_random_alias() {
