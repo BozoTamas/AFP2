@@ -27,9 +27,10 @@ public function new_User() {
 public function user_Login() {
 		$this->model->user_Login();
 		$this->redirect('/');
-		
-public function user_ForgotPassword
+}
+public function user_ForgotPassword() {
 		$this->model->user_ForgotPassword();
 		$this->redirect('/');
+}
 
 }
