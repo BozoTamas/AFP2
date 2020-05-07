@@ -1,10 +1,7 @@
 <?php
 
-define('URL', 'http://localhost/sources');
-
-//define('PROTOCOL', (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? 'https' : 'http');
-//define('PROTOCOL', 'http');
-//define('ROOT_URL', PROTOCOL.'://'.$_SERVER['SERVER_NAME'].URL);
+define('PROTOCOL', (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? 'https' : 'http');
+define('URL', PROTOCOL.'://'.$_SERVER['SERVER_NAME']);
 
 define('MAIN_CONTROLLER', 'home');
 define('MAIN_VIEW', 'index');
