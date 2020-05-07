@@ -37,17 +37,22 @@ Bejelentkezés esetén, több opciónk van szerkeszteni ezeket a linkeket, akár
 |---|---|---|
 |Felület|nyitó oldal|2 formot tartalmaz. Letisztult, barátságos, responsive megjelenés|
 |Felület|File feltöltő form|Egy textareat, file input, alias, expiration|
+|Modifikáció|File feltöltő form mentése|Az update mappában az alias nevével megegyező mappát hoz létre és oda menti a fájlokat, a textareába beírt szöveget egy text.txt-be menti szintén ebbe a mappába|
 |Felület|Drag and drop|Amikor a textarea területére drag and droppal bedobok egy fájlt, megjelenik a feltölteni kívánt fájlok listájában|
 |Felület|Fájlok listája|Minden fájl melett megjelenik egy "x" amivel kitörölhetjük a listából|
 |Felület|url form|2 inputot tartalmaz, hozzú url és az alias megadására|
-|Felület|mappa oldal|Akkor jelenik meg, amikor egy feltöltött mappa linkére kattintunk, tartalma egy táblázat a feltöltött fájlok listájával|
+|Modifikáció|üres alias|Ha üresen hagyják feltöltéskor ezt a mező, a rendszer egy 6 karakterből álló véletlen kódot generál|
+|Felület|mappa oldal|Akkor jelenik meg, amikor egy feltöltött mappa linkére kattintunk, tartalma egy táblázat a feltöltött fájlok listájával, minden file melett letöltő link, illetve le lehet tölteni az egészet is egy zip-ben|
 |Felület|mappa oldal|Bal kattintással a táblázatban kiválaszthatok egy file, aminek a tartalma megjelenik, akár szöveg, kép, pdf, doc|
+|Felület|bejelentkezés után|A felhasználó által feltöltött linkek és mappák jelennek meg 1-1 táblázatban, van hozzájuk törlő link|
 |Modifikáció|url kezelése|url ellenőrzése, hogy meglévő aliasra hivatkozik-e, ha igen megfelelő oldal, file betöltése. Ha nincs ilyen akkor a főoldal nyílik meg|
 |Adatbázisba mentés|url form|új url mentése az adatbázisba, validáció az alias, ha az alias mező már foglalt visszajelzés. Ha az alias mező üres akkor random 6 karakteres sorozatot generál aliasnak|
 |Adatbázisba mentés|file form|fájlok mentése a szerveren, elérési út mentése az adatbázisba, alias kezelése mint elöbb|
 |Modifikáció|Több file feltöltése|zip formátumba csomagolás, és úgy mentés|
 |Modifikáció|Login|Login form validáció, ha sikeres, bejelentkezés|
 |Modifikáció|Regisztráció|validáció, sikeres regisztrálás esetén bejelentkezés|
+|Modifikáció|bejelentkezés felület|A felületett az user_id alapján adatokkal kiszolgálni|
+|Modifikáció|bejelentkezés utáni alias törlés|A megfelelő táblából töröljön id alapján|
 |Email|Email küldés|Sikeres regisztráció esetén email küldés, a felhasználó adataival|
 |Modifikáció|Lejárt aliaszok|Régi lejárt aliaszok törlése|
 |Felület|Reklámok|A weboldal oldalán reklámbanner megjelenítése|
