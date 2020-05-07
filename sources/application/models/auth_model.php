@@ -83,10 +83,14 @@ class auth_model extends Model {
 	$$
 	USE `test`
 	$$
+	DEFINER=`root`@`127.0.0.1`
+	TRIGGER `dir`
 	CREATE TRIGGER Outdated_File AFTER UPDATE ON expiration FOR EACH ROW
 	
 	BEGIN
-	INSERT INTO `dir` VALUES
+	DELETE FROM `dir` WHERE expiration = NOW()
+	END
+	$$
 	
 }
 
