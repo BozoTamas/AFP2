@@ -29,7 +29,8 @@
                         <li><a href="<?=URL?>/support">Contacts</a></li>                      
                         <li><a href="<?=URL?>/register">Registration</a></li>
                         <li><a href="<?=URL?>/login">Login</a></li>
-						<li><a href="<?=URL?>/megjelenites">Megjelenites</a></li>  						
+						<li><a href="<?=URL?>/index">Uploads</a></li>
+						<li><a href="<?=URL?>/megjelenites">Views</a></li>  						
                         
                     </ul>
                 </nav>                    
