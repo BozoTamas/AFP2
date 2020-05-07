@@ -1,3 +1,4 @@
+
 <section class="banner-area relative">	
 	<div class="overlay overlay-bg">
 		<div class="container">
@@ -10,5 +11,13 @@
 </section>
 
 <section class="team-area section-gap team-page-teams banner-area relative">
-	<button type="submit" class="btn btn-dark">Registration</button>
+	<div class=" container">
+	</br></br></br></br>
+	<a href="<?=URL?>/register" class="btn btn-danger "><i class="fas"></i> Registration</a></br></br>
+	<a href="<?=URL?>/login" class="btn btn-danger "><i class="fas"></i> Login</a></br></br>
+	<a href="<?=URL?>/upload" class="btn btn-danger "><i class="fas"></i> Upload</a></br></br>
+	<a href="<?=URL?>/megjelenites" class="btn btn-danger "><i class="fas"></i> View</a></br></br>
+	</div>
+	</br></br></br></br></br></br></br></br>
 </section>
+

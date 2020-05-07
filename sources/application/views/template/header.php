@@ -26,11 +26,7 @@
                 <nav id="nav-menu-container left">
                     <ul class="nav-menu">
                         
-                        <li><a href="<?=URL?>/support">Contacts</a></li>                      
-                        <li><a href="<?=URL?>/register">Registration</a></li>
-                        <li><a href="<?=URL?>/login">Login</a></li>
-						<li><a href="<?=URL?>/upload">Uploads</a></li>
-						<li><a href="<?=URL?>/megjelenites">Views</a></li>  						
+                     						
                         
                     </ul>
                 </nav>                    
