@@ -30,7 +30,7 @@ class home_model extends Model {
             VALUES (:userID, :alias, :url, :created)');
         
         $params = [
-            ':userID'   => NULL,
+            ':userID'   => isset($_SESSION['userID']) ? $_SESSION['userID'] : NULL,
             ':alias'    => $alias,
             ':url'      => $_POST['url'],
             ':created'  => date("Y-m-d H:i:s")
@@ -57,6 +57,7 @@ class home_model extends Model {
                     VALUES (:alias, :created, :expiration)');
                 
                 $params = [
+                    ':userID'   => isset($_SESSION['userID']) ? $_SESSION['userID'] : NULL,
                     ':alias'    => $alias,
                     ':created'  => date("Y-m-d H:i:s"),
                     ':expiration'   => date("Y-m-d H:i:s", strtotime("+".$_POST['expiration']." day"))
@@ -83,5 +84,17 @@ class home_model extends Model {
 
     private function get_random_alias() {
         return substr(str_shuffle(str_repeat($x='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil(6/strlen($x)))),1,6);
+    }
+
+    public function getUsersLinks($id) {
+        return $this->getList("SELECT * FROM `links` WHERE `userID` = ".$id." ORDER BY `created`");
+    }
+
+    public function getUsersDirs($id) {
+        return $this->getList("SELECT * FROM `dir` WHERE `userID` = ".$id." ORDER BY `created`");
+    }
+
+    public function delete($table, $id) {
+        $this->executeDML("DELETE FROM `".$table."` WHERE id = ".$id);
     }
 }
