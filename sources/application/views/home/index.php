@@ -1,5 +1,5 @@
 <div align = "center">
-<section class="center">
+<section class="banner-area relative">
     <form action="saveLink" method="POST">
         <input type="text" name="url">
         <input type="text" name="alias">
@@ -7,7 +7,7 @@
     </form>
 </section>
 
-<section class="center">
+<section class="banner-area relative">
     <form method="POST" action="createDir" enctype="multipart/form-data">
         <textarea id="textarea" name="text"></textarea>
         <input type="file" name="files[]">
