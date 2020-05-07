@@ -2,15 +2,15 @@
 <section class="center">
     <form action="saveLink" method="POST">
         </br>
-		<a>LINK ABBREVIATION:</a></br>
+		<a class="h1"><ins>LINK ABBREVIATION:</ins></a></br>
 		</br>
 		<table>
 		<tr>
-			<td><a>The URL:</a></td>
+			<td><a class="h3">The URL:</a></td>
 			<td> <input type="text" name="url"><td>
 		</tr>
 		<tr>
-			<td><a>The URL abbreviation:</a></td>
+			<td><a class="h3">The URL abbreviation:</a></td>
 			<td><input type="text" name="alias"></td>
 		</tr>             
 		</table>
@@ -23,20 +23,25 @@
     <form method="POST" action="createDir" enctype="multipart/form-data">
     </br>
     </br>
-	<a>FILE UPLOAD:</a>
+	<a class="h1"><ins>FILE UPLOAD:<ins></a>
     </br>
 	</br>
-	<div class="left">
-    <a>New Pase:</a></br>
-        <textarea id="textarea" name="text"></textarea>
+	<div class="container">
+    <a class="h3">New Pase:</a></br></br>
+        <textarea class="form-control" rows="5" id="textarea " name="text"></textarea>
         </br></br>
+		
+		
+		
         <input type="file" name="files[]">
         </br></br>
-        <a>The link abbreviation:</a>
+        <a class="h3">The link abbreviation:</a>
         <input type="text" name="alias">
         </br></br>
-        <a>How long should it be?</a> </br></br>
+		
 	</div>
+        <a class="h3">How long should it be?</a> </br></br>
+					
         <select name="expiration">
             <option value="1">1 Day</option>
             <option value="3">3 Days</option>
