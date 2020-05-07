@@ -74,4 +74,12 @@ class Home extends Controller {
             $this->redirect('/');
         }
     }
+
+    public function delete($table, $id) {
+
+        if (isset($_SESSION['userID']))
+            $this->home_model->delete($table, $id);
+        
+        $this->redirect('/');
+    }
 }
