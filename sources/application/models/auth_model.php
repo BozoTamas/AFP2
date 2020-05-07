@@ -77,6 +77,8 @@ class auth_model extends Model {
 	$result = mysqli_query($database, $query);
 		}
 	}
+	
+	//Lejárat trigger
 }
 
 	
