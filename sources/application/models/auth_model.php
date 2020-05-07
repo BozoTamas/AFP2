@@ -79,9 +79,14 @@ class auth_model extends Model {
 	}
 	
 	/*Lejárat trigger
+	DELIMITER 
+	$$
+	USE `test`
+	$$
 	CREATE TRIGGER Outdated_File AFTER UPDATE ON expiration FOR EACH ROW
 	
 	BEGIN
+	INSERT INTO `dir` VALUES
 	
 }
 
