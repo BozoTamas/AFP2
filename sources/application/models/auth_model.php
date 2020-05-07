@@ -78,7 +78,9 @@ class auth_model extends Model {
 		}
 	}
 	
-	//Lejárat trigger
+	/*Lejárat trigger
+	CREATE TRIGGER Outdated_File AFTER UPDATE ON expiration FOR EACH ROW
+	
 }
 
 	
