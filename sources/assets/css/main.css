@@ -787,6 +787,7 @@ b, sup, sub, u, del {
 
 h1 {
   font-size: 36px;
+  color: #fff;
 }
 
 h2 {
@@ -799,6 +800,7 @@ h3 {
 
 h4 {
   font-size: 18px;
+  color: #fff;
 }
 
 h5 {

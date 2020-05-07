@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="<?=URL?>/assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?=URL?>/assets/vendor/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="<?=URL?>/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="<?=URL?>/assets/css/main.css">
 </head>
 
 <header>
@@ -21,7 +21,7 @@
             <div class="row align-items-center justify-content-between d-flex">
                 <div id="logo">
                     <a href="index.html"><img src="img/logo.png" /></a>
-                    <a href="<?=URL?>/startpage" class="btn btn-primary "><i class="fas fa-home"></i> HOME</a>
+                    <a href="<?=URL?>" class="btn btn-primary "><i class="fas fa-home"></i> HOME</a>
                 </div>
                 <nav id="nav-menu-container left">
                     <ul class="nav-menu">
@@ -29,7 +29,7 @@
                         <li><a href="<?=URL?>/support">Contacts</a></li>                      
                         <li><a href="<?=URL?>/register">Registration</a></li>
                         <li><a href="<?=URL?>/login">Login</a></li>
-						<li><a href="<?=URL?>/megjelenites">Views</a></li>  						
+						<li><a href="<?=URL?>/megjelenites">Megjelenites</a></li>  						
                         
                     </ul>
                 </nav>                    

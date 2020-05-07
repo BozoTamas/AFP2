@@ -9,13 +9,13 @@
 	</div>
 </section>
 
-<section class="team-area section-gap team-page-teams" id="team">
-	<div class="container">
-	
-		<div class="row d-flex justify-content-center">
-			<div class="menu-content pb-70 col-lg-8">
-				<div class="title text-center">
-					<h1 class="mb-10">Developers</h1>
+<section class="team-area section-gap team-page-teams banner-area relative" id="team">
+		<div class="container">		
+			<div class="row d-flex justify-content-center">
+				<div class="menu-content pb-70 col-lg-8">
+					<div class="title text-center">
+						<h1 class="mb-10">Developers</h1>
+					</div>
 				</div>
 			</div>
 		</div>		
@@ -23,40 +23,38 @@
 		<div class="row justify-content-center d-flex align-items-center">
 		
 			<div class="col-md-3 single-team">
-			    <div class="meta-text mt-30 text-center">
+			    <div class="meta-text mt-30 text-center text-white">
 				    <h4>Bozó Tamás Dániel - J7Y3U4</h4>
 				    <p>btd2k17@gmail.com</p>									    	
 			    </div>
 			</div>
 			
 			<div class="col-md-3 single-team">
-			    <div class="meta-text mt-30 text-center">
+			    <div class="meta-text mt-30 text-center text-white">
 				    <h4>Horváth Dániel - NMEQAT</h4>
 				    <p>horvath95d@gmail.com</p>			    	
 			    </div>
 			</div>
 			
 			<div class="col-md-3 single-team">
-			    <div class="meta-text mt-30 text-center">
+			    <div class="meta-text mt-30 text-center text-white">
 				    <h4>Rieger Máté József - JEC8T3</h4>
 				    <p>rieger.mate@gmail.com</p>			    	
 			    </div>
 			</div>
 			
 			<div class="col-md-3 single-team">
-			    <div class="meta-text mt-30 text-center">
+			    <div class="meta-text mt-30 text-center text-white">
 				    <h4>Szabó Patrik - AI18MZ</h4>
 				    <p>Szabo.patrik@gmail.com</p>			    	
 			    </div>
 			</div>
 			
 			<div class="col-md-3 single-team">
-			    <div class="meta-text mt-30 text-center">
+			    <div class="meta-text mt-30 text-center text-white">
 				    <h4>Veréb Dávid - KN0UMQ</h4>
 				    <p>verebdavid2@gmail.com</p>			    	
 			    </div>
 			</div>
-			
 		</div>
-	</div>	
 </section>
