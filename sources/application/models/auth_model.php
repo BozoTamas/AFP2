@@ -91,6 +91,7 @@ class auth_model extends Model {
 	DELETE FROM `dir` WHERE expiration = NOW()
 	END
 	$$
+	*/
 	
 }
 
