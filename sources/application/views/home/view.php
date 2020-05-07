@@ -1,4 +1,5 @@
 
+
 <section >
     <div align = "left">
      <table class="h3 text-black">
@@ -35,7 +36,9 @@
         if (is_dir($dir)){
           if ($dh = opendir($dir)){
             while (($file = readdir($dh)) !== false){
-              echo "filename:" . $file . "<br>";
+              echo "<a class='h3 text-black'>Filename:   " . $file ."</a>
+               <button type='submit' class='btn btn-success'>Download</button>
+              <br></br>";
             }
             closedir($dh);
           }
@@ -43,3 +46,5 @@
         ?>
     </div>
 </section>
+
+ 
