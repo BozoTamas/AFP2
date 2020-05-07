@@ -2,13 +2,19 @@
 <section class="center">
     <form action="saveLink" method="POST">
         </br>
-		<a>Link rövidítése:</a></br>
+		<a>LINK ABBREVIATION:</a></br>
 		</br>
-		
-        <a>Az URL:</a>
-        <input type="text" name="url"></br></br>
-        <a>Az URL rövidítése:</a>
-        <input type="text" name="alias"></br></br>
+		<table>
+		<tr>
+			<td><a>The URL:</a></td>
+			<td> <input type="text" name="url"><td>
+		</tr>
+		<tr>
+			<td><a>The URL abbreviation:</a></td>
+			<td><input type="text" name="alias"></td>
+		</tr>             
+		</table>
+		</br>
         <button type="submit" class="btn btn-dark">Submit</button>
     </form>
 </section>
@@ -17,18 +23,20 @@
     <form method="POST" action="createDir" enctype="multipart/form-data">
     </br>
     </br>
-	<a>Fájl feltöltése:</a>
+	<a>FILE UPLOAD:</a>
     </br>
 	</br>
+	<div class="left">
     <a>New Pase:</a></br>
         <textarea id="textarea" name="text"></textarea>
         </br></br>
         <input type="file" name="files[]">
         </br></br>
-        <a>A link rövidítése:</a>
+        <a>The link abbreviation:</a>
         <input type="text" name="alias">
         </br></br>
-        <a>Mennyi ideig legyen aktív a link:</a> </br></br>
+        <a>How long should it be?</a> </br></br>
+	</div>
         <select name="expiration">
             <option value="1">1 Day</option>
             <option value="3">3 Days</option>
