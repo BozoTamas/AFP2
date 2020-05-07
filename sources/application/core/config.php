@@ -1,6 +1,6 @@
 <?php
 
-define('URL', 'http://localhost');
+define('URL', 'http://localhost/sources');
 
 //define('PROTOCOL', (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? 'https' : 'http');
 //define('PROTOCOL', 'http');
@@ -11,10 +11,10 @@ define('MAIN_VIEW', 'index');
 
 // DB Params
 define('DB_HOST', 'localhost'); //'db4free.net');
-define('DB_NAME', 'afp2'); //'afp2_link');
+define('DB_NAME', 'projektlabor2'); //'afp2_link');
 define('DB_USER', 'root'); //'afp2_link');
 define('DB_PASS', ''); //afp2_link');
-define('DB_PORT', 3306);
+define('DB_PORT', 3308);
 define('DB_TYPE', 'mysql');
 define('DB_CHARSET', 'UTF-8');
 
