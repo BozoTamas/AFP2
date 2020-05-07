@@ -16,12 +16,12 @@
 
 <header>
 
- <nav class="bg-primary py-1">
+ <nav class="bg-dark py-1">
 <div class="container   justify-content-between">
             <div class="row align-items-center justify-content-between d-flex">
                 <div id="logo">
                     <a href="index.html"><img src="<?=URL?>/assets/img/logo.png" /></a>
-                    <a href="<?=URL?>" class="btn btn-primary "><i class="fas fa-home"></i> HOME</a>
+                    <a href="<?=URL?>" class="btn btn-danger "><i class="fas fa-home"></i> HOME</a>
                 </div>
                 <nav id="nav-menu-container left">
                     <ul class="nav-menu">
@@ -29,7 +29,7 @@
                         <li><a href="<?=URL?>/support">Contacts</a></li>                      
                         <li><a href="<?=URL?>/register">Registration</a></li>
                         <li><a href="<?=URL?>/login">Login</a></li>
-						<li><a href="<?=URL?>/index">Uploads</a></li>
+						<li><a href="<?=URL?>/upload">Uploads</a></li>
 						<li><a href="<?=URL?>/megjelenites">Views</a></li>  						
                         
                     </ul>

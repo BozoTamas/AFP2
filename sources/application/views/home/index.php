@@ -15,7 +15,7 @@
 		</tr>             
 		</table>
 		</br>
-        <button type="submit" class="btn btn-dark">Submit</button>
+        <button type="submit" class="btn btn-danger">Submit</button>
     </form>
 </section>
 
@@ -53,7 +53,7 @@
             <option value="180">6 Months</option>
             <option value="365">1 Year</option>
         </select></br>
-        <button type="submit" class="btn btn-dark">Submit</button>
+        <button type="submit" class="btn btn-danger">Submit</button>
     </form>
     </br>
     </br>
