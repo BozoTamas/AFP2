@@ -35,6 +35,13 @@ Bejelentkezés esetén, több opciónk van szerkeszteni ezeket a linkeket, akár
 # Követelménylista
 |Modul|Név|Kifejtés|
 |---|---|---|
+|Felület|nyitó oldal|2 formot tartalmaz. Letisztult, barátságos, responsive megjelenés|
+|Felület|File feltöltő form|Egy textareat, file input, alias, expiration|
+|Felület|Drag and drop|Amikor a textarea területére drag and droppal bedobok egy fájlt, megjelenik a feltölteni kívánt fájlok listájában|
+|Felület|Fájlok listája|Minden fájl melett megjelenik egy "x" amivel kitörölhetjük a listából|
+|Felület|url form|2 inputot tartalmaz, hozzú url és az alias megadására|
+|Felület|mappa oldal|Akkor jelenik meg, amikor egy feltöltött mappa linkére kattintunk, tartalma egy táblázat a feltöltött fájlok listájával|
+|Felület|mappa oldal|Bal kattintással a táblázatban kiválaszthatok egy file, aminek a tartalma megjelenik, akár szöveg, kép, pdf, doc|
 |Modifikáció|url kezelése|url ellenőrzése, hogy meglévő aliasra hivatkozik-e, ha igen megfelelő oldal, file betöltése. Ha nincs ilyen akkor a főoldal nyílik meg|
 |Adatbázisba mentés|url form|új url mentése az adatbázisba, validáció az alias, ha az alias mező már foglalt visszajelzés. Ha az alias mező üres akkor random 6 karakteres sorozatot generál aliasnak|
 |Adatbázisba mentés|file form|fájlok mentése a szerveren, elérési út mentése az adatbázisba, alias kezelése mint elöbb|
