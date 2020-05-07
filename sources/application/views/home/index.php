@@ -17,29 +17,21 @@
 		</br>
         <button type="submit" class="btn btn-danger">Submit</button>
     </form>
-
     <form method="POST" action="createDir" enctype="multipart/form-data">
-    </br>
-    </br>
+    </br></br>
 	<a class="h1 text-white"><ins>FILE UPLOAD:<ins></a>
-    </br>
-	</br>
+    </br></br>
 	<div class="container">
     <a class="h3 text-white">New Pase:</a></br></br>
         <textarea class="form-control" rows="5" id="textarea " name="text"></textarea>
-        </br></br>
-		
-		
-		
+        </br></br>				
         <input type="file" name="files[]">
         </br></br>
         <a class="h3 text-white">The link abbreviation:</a>
         <input type="text" name="alias">
-        </br></br>
-		
+        </br></br>		
 	</div>
-        <a class="h3 text-white">How long should it be?</a> </br></br>
-					
+        <a class="h3 text-white">How long should it be?</a> </br></br>					
         <select name="expiration">
             <option value="1">1 Day</option>
             <option value="3">3 Days</option>
@@ -53,7 +45,6 @@
         </select></br>
         <button type="submit" class="btn btn-danger">Submit</button>
     </form>
-    </br>
-    </br>
+    </br></br>
 </section>
 </div>

@@ -15,8 +15,7 @@
 	</br></br></br></br>
 	<a href="<?=URL?>/register" class="btn btn-danger "><i class="fas"></i> Registration</a></br></br>
 	<a href="<?=URL?>/login" class="btn btn-danger "><i class="fas"></i> Login</a></br></br>
-	<a href="<?=URL?>/upload" class="btn btn-danger "><i class="fas"></i> Upload</a></br></br>
-	<a href="<?=URL?>/megjelenites" class="btn btn-danger "><i class="fas"></i> View</a></br></br>
+	<a href="<?=URL?>/upload" class="btn btn-danger "><i class="fas"></i> Upload</a></br></br>	
 	</div>
 	</br></br></br></br></br></br></br></br>
 </section>

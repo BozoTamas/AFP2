@@ -8,7 +8,6 @@
 		</div>
 	</div>
 </section>
-
 <section class="team-area section-gap team-page-teams banner-area relative" id="team">
 		<div class="container">		
 			<div class="row d-flex justify-content-center">
@@ -18,8 +17,7 @@
 					</div>
 				</div>
 			</div>
-		</div>		
-		
+		</div>				
 		<div class="row justify-content-center d-flex align-items-center">
 		
 			<div class="col-md-3 single-team">
@@ -27,29 +25,25 @@
 				    <h4 class="h3 text-white"><ins>Bozó Tamás Dániel - J7Y3U4</ins></h4>
 				    <p class="h3 text-white">btd2k17@gmail.com</p>									    	
 			    </div>
-			</div>
-			
+			</div>			
 			<div class="col-md-3 single-team">
 			    <div class="meta-text mt-30 text-center text-white">
 				    <h4 class="h3 text-white"><ins>Horváth Dániel - NMEQAT</ins></h4>
 				    <p class="h3 text-white">horvath95d@gmail.com</p>			    	
 			    </div>
-			</div>
-			
+			</div>			
 			<div class="col-md-3 single-team">
 			    <div class="meta-text mt-30 text-center text-white">
 				    <h4 class="h3 text-white"><ins>Rieger Máté József - JEC8T3</ins></h4>
 				    <p class="h3 text-white">rieger.mate@gmail.com</p>			    	
 			    </div>
-			</div>
-			
+			</div>			
 			<div class="col-md-3 single-team">
 			    <div class="meta-text mt-30 text-center text-white">
 				    <h4 class="h3 text-white"><ins>Szabó Patrik - AI18MZ</ins></h4>
 				    <p class="h3 text-white">Szabo.patrik@gmail.com</p>			    	
 			    </div>
-			</div>
-			
+			</div>			
 			<div class="col-md-3 single-team">
 			    <div class="meta-text mt-30 text-center text-white">
 				    <h4 class="h3 text-white"><ins>Veréb Dávid - KN0UMQ</ins></h4>
