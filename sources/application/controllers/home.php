@@ -15,7 +15,7 @@ class Home extends Controller {
         
         if (empty($alias)) {
             $data = $this->model->getLastLinks();
-            $this->load_view('home/index', $data);
+            $this->load_view('home/startpage', $data);
         
         } else {
             $url = $this->model->get_url($alias);
@@ -26,11 +26,11 @@ class Home extends Controller {
             $dir = $this->model->getDir($alias);
 
             if (!empty($dir))
-                $this->load_view('home/dir', $dir);
+                $this->load_view('home/megjelenites', $dir);
 
             else {
                 $data = $this->model->getLastLinks();
-                $this->load_view('home/index', $data);
+                $this->load_view('home/startpage', $data);
             }
         }
     }
@@ -45,34 +45,47 @@ class Home extends Controller {
         $this->redirect('/');
     }
     
-    public function startpage() {
-        $this->load_view('home/startpage');
+    public function upload() {
+        
+        if (isset($_SESSION['uderID'])) {
+            $data['dirs'] = $this->model->getUsersDirs($_SESSION['userID']);
+            $data['links'] = $this->model->getUsersLinks($_SESSION['userID']);
+        } else
+            $data = [];
+
+        $this->load_view('home/index', $data);
     }
     
     public function support() {
         $this->load_view('home/support');
     }
     
+    public function register() {
+        
+        if (empty($_POST)) {
+            $this->load_view('home/register');
+        
+        } else {
+            $this->auth_model->register();
+            $this->redirect('/');
+        }
+    }
+    
     public function login() {
         
         if (empty($_POST)) {
-            $this->load_view('home/login');            
+            $this->load_view('home/login');
         
         } else {
             $this->auth_model->login();
             $this->redirect('/main');
         }
     }
-    
-    public function register() {
-        
-        if (empty($_POST)) {
-            $this->load_view('home/register');            
-        
-        } else {
-            $this->auth_model->register();
-            $this->redirect('/');
-        }
+
+    public function logout() {
+        session_unset();
+        $_SESSION['message'] = "Sikeres kijelentkezés";
+        header('Location: '.URL);
     }
 
     public function delete($table, $id) {
