@@ -20,7 +20,7 @@
 <div class="container   justify-content-between">
             <div class="row align-items-center justify-content-between d-flex">
                 <div id="logo">
-                    <a href="index.html"><img src="img/logo.png" /></a>
+                    <a href="index.html"><img src="<?=URL?>/assets/img/logo.png" /></a>
                     <a href="<?=URL?>" class="btn btn-primary "><i class="fas fa-home"></i> HOME</a>
                 </div>
                 <nav id="nav-menu-container left">
