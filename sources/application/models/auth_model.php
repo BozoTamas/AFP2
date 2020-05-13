@@ -49,17 +49,33 @@ class auth_model extends Model {
 		$email,
         $passwordHash
     );
+	if (empty($username)) {
+		array_push($errors);
+		$_SESSION['dirMessage'] = 'Adjon meg felhasználónevet!';
+	}
+	if (empty($password)) {
+		array_push($errors);
+		$_SESSION['dirMessage'] = 'Adjon meg jelszót!';
+	}
+	if (empty($email)) {
+		array_push($errors);
+		$_SESSION['dirMessage'] = 'Adjon meg e-mail címet!';
+	}
+	if (count($errors) == 0) {
     $insertId = $this->ds->insert($query, $paramType, $paramArray);
     return $insertId;
-	//	}
+	$_SESSION['dirMessage'] = 'Sikeres regisztráció!';
+	 }
 	}
 	
 	public function login($username, $password) {
 		global $errors, $database;
 	if (empty($username)) {
+		array_push($errors);
 		$_SESSION['dirMessage'] = 'A bejelentkezéshez szükséges a felhasználónév';
 	}
 	if (empty($password)) {
+		array_push($errors);
 		$_SESSION['dirMessage'] = 'A bejelentkezéshez szükséges a jelszó';
 	}
 	if (count($errors) == 0) {
