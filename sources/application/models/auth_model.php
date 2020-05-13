@@ -37,7 +37,7 @@ class auth_model extends Model {
     return $memberCount;
 	}
 		
-	public function new_User($username, $password, $email) {
+	public function register($username, $password, $email) {
 		
 		global $errors; //hibák számát tárolja, ha nagyobb mint 0, nem engedi a reget
 
