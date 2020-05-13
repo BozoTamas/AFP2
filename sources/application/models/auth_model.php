@@ -57,15 +57,15 @@ class auth_model extends Model {
 	public function login($username, $password) {
 		global $errors, $database;
 	if (empty($username)) {
-		array_push($errors, "A bejelentkezéshez szükséges a felhasználónév");
+		$_SESSION['dirMessage'] = 'A bejelentkezéshez szükséges a felhasználónév';
 	}
 	if (empty($password)) {
-		array_push($errors, "A bejelentkezéshez szükséges a jelszó");
+		$_SESSION['dirMessage'] = 'A bejelentkezéshez szükséges a jelszó';
 	}
 	if (count($errors) == 0) {
 	$query = "SELECT * FROM `users` WHERE `name` = ? OR `password` = ?";
 	$result = mysqli_query($database, $query);
-	$_SESSION['dirMessage'] = 'Sikeres bejelentkezés';
+		$_SESSION['dirMessage'] = 'Sikeres bejelentkezés';
 		}
 	}
 	
