@@ -2,7 +2,7 @@
 
 class auth_model extends Model {
 	
-	public function validate_Member() {
+	/*public function validate_Member() {
 
     $valid = true;
     $errorMessage = array();
@@ -25,7 +25,7 @@ class auth_model extends Model {
                 $valid = false;
             }
 		}
-	}
+	}*/
 		
 	/*public function user_Exists($username, $email) {
 
