@@ -9,28 +9,23 @@ class Auth extends Controller {
         $this->model = $this->load_model('auth_model');
     }
 
-public function validate_Member() {
+/*public function validate_Member() {
         $this->model->validate_Member();
         $this->redirect('/');
-    }
+    }*/
 
-public function user_Exists() {
+/*public function user_Exists() {
         $this->model->user_Exists();
         $this->redirect('/');
-    }
+    }*/
 	
-public function new_User() {
-        $this->model->new_User();
+public function register() {
+        $this->model->register();
         $this->redirect('/');
     }
 	
-public function user_Login() {
-		$this->model->user_Login();
+public function login() {
+		$this->model->login();
 		$this->redirect('/');
 }
-public function user_ForgotPassword() {
-		$this->model->user_ForgotPassword();
-		$this->redirect('/');
-}
-
 }
