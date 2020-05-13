@@ -64,7 +64,7 @@ class auth_model extends Model {
 	//	}
 	}
 	
-	public function user_Login($username, $password) {
+	public function login($username, $password) {
 		global $errors, $database;
 	if (empty($username)) {
 		array_push($errors, "A bejelentkezéshez szükséges a felhasználónév");
