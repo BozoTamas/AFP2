@@ -65,6 +65,7 @@ class auth_model extends Model {
 	if (count($errors) == 0) {
 	$query = "SELECT * FROM `users` WHERE `name` = ? OR `password` = ?";
 	$result = mysqli_query($database, $query);
+	$_SESSION['dirMessage'] = 'Sikeres bejelentkezés';
 		}
 	}
 	
