@@ -27,7 +27,7 @@ class auth_model extends Model {
 		}
 	}
 		
-	public function user_Exists($username, $email) {
+	/*public function user_Exists($username, $email) {
 
     $query = "SELECT * FROM `users` WHERE `name` = ? OR `email` = ?";
     $paramType = "ss";
@@ -35,7 +35,7 @@ class auth_model extends Model {
     $memberCount = $this->ds->numRows($query, $paramType, $paramArray);
     
     return $memberCount;
-	}
+	}*/
 		
 	public function register($username, $password, $email) {
 		
