@@ -49,16 +49,6 @@ class auth_model extends Model {
 		$email,
         $passwordHash
     );
-	/*if (empty($username)) {  //vizsgálja, hogy beírt-e valamit a júzer az adott helyre
-		array_push($errors, "Írjon be felhasználót");  
-	}
-	if (empty($email)) { 
-		array_push($errors, "Írjon be e-mail címet"); 
-	}
-	if (empty($password_1)) { 
-		array_push($errors, "Írjon be jelszót"); 
-	}
-	*///if (count($errors) == 0) { //ha 0 a hibaszám akkor feltölti az adatbázisba
     $insertId = $this->ds->insert($query, $paramType, $paramArray);
     return $insertId;
 	//	}
