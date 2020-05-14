@@ -1,0 +1,6 @@
+Frontend teszt
+
+-Tesztelés idõpontja:2020.maj.14
+-Tesztelõ: Rieger Máté
+-Teszt: Bootstrap jo hivatkozása , CSS elérése az oldalakon
+-Észrevétel : A tesztek sikeresen müködnek, a hivatkozások megfelelõen müködnek
