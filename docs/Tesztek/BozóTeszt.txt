@@ -1,0 +1,9 @@
+Front end teszt
+
+Logo megjelenítés
+Időpont: 2020.05.10.
+Eredmény: A logo jól megjelenik minden oldalon köszönhetően a header fájlnak.
+
+Szövegmegjelenítés
+Időpont: 2020.05.10.
+Eredmény: Minden szöveg megjelenik hiba nélkül.
