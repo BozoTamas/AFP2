@@ -41,3 +41,20 @@ Bármit írok az input mezőkbe a login gomb megnyomása után főoldalra dob vi
 ## Megjelenés oldal
 Ez az oldal nem létezik, a link a nyitó oldalra dob
 ###### Eredmény: Hibás működés
+
+## Feltöltés oldal
+Amit beírok szöveget a szöveg box-ba lehetőseg van aszerkesztésére, és megtudom adni az idtartamát is meddig legyen érvényes/eléhető a 
+létrehozott link.
+###### Eredmény: Helyes  működés
+
+## Link rövidétésére szolágló oldal
+Amit kívánok rövidíteni linket betudom irni a boxba és megtudok adni egy másik link nevet amin keresztül elérem és az időtartamot is megtudom adni meddig legyen elérhető(mennyi idő után törlődjön).
+###### Eredmény: Helyes  működés
+
+## Logo
+A headerben kivánt megjelenítendő logo megjelenik.
+###### Eredmény: Helyes  működés
+
+## Logo
+A logo minősége nem megfelelő és közelsincs köze a kivánt végeredményhez.
+###### Eredmény: Hibás működés
