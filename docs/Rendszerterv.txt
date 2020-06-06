@@ -7,7 +7,7 @@ A felhasználók egy txt szerkesztő felületen tudnak online kódot/szöveget �
 
 Projektterv
 Szerepkörök:
-	Front end: Bozó Tamás Dániel, Rieger Máté József
+	Front end: Bozó Tamás Dániel, Rieger Máté József, Szabó Patrik
 	
 	Back end: Horváth Dániel, Veréb Dávid
 
@@ -48,8 +48,8 @@ Fizikai környezet
 Az alkalmazás webes felületre készül. Feltételezzük, hogy a számítógépen van telepítve valamilyen böngésző(Google Chrome, Mozilla Firefox, Microsoft Edge).
 Fejlesztői eszközök:
 	Notepad++
-	.
-	.
+	Visual  Studio
+	phpMyAdmin
 	.
 
 Architekturális terv
@@ -90,7 +90,8 @@ Files tábla:
 ----
 
 Implementációs terv
-A webes felületet HTML, CSS használatával fogjuk megoldani.
+A webes felületet HTML, CSS használatával fogjuk megoldani.A CSS állomány fog állni egy saját magunk által megírt fejlesztet állományból és 
+a BootStrap által megírt formázások állományből.
 Az egyes oldalak kódját külön fájlokba írjuk, valamint az admin és user fájlok más-más mappába lesznek elkülönítve. 
 
 Tesztterv
